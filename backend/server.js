@@ -12,9 +12,9 @@ app.use(cors({
     origin: [
         process.env.FRONTEND_URL,
         'http://127.0.0.1:5500',
-        'http://44.223.23.145:8014',
-        'http://44.223.23.145:8015',
-        'http://44.223.23.145:3405',
+        'http://13.201.36.187:8014',
+        'http://13.201.36.187:8015',
+        'http://13.201.36.187:3405',
         'http://localhost:5500',
         'http://localhost:3405'
     ],
@@ -27,7 +27,7 @@ const pool = new Pool({
     user: process.env.DB_USER || 'postgres',
     host: process.env.DB_HOST || 'postgres',
     database: process.env.DB_NAME || 'new_employee_db',
-    password: process.env.DB_PASSWORD || 'admin123',
+    password: process.env.DB_PASSWORD || 'admin234',
     port: process.env.DB_PORT || 5432,
     retry: {
         max: 5,
